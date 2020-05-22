@@ -45,9 +45,9 @@ public class CartaoCreditoController {
      */
     @RequestMapping(value = "/enviarCartao", method = RequestMethod.GET)
     public void criarCartaoCreditoFila(@RequestParam String nomeResponsavel,
-                                     @RequestParam Long numero,
-                                     @RequestParam String bandeira,
-                                     @RequestParam Integer seguranca) {
+                                       @RequestParam Long numero,
+                                       @RequestParam String bandeira,
+                                       @RequestParam Integer seguranca) {
 
         CartaoCredito cartaoCredito = new CartaoCredito();
         cartaoCredito.setNomeResponsavel(nomeResponsavel);

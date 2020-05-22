@@ -1,0 +1,5 @@
+br\com\cartao\model\CartaoCredito.class
+br\com\cartao\service\CartaoCreditoService.class
+br\com\cartao\CartaoCreditoApplication.class
+br\com\cartao\config\RabbitMQConfig.class
+br\com\cartao\controller\CartaoCreditoController.class

@@ -12,3 +12,13 @@ curl http://localhost:8080/cartao/enviarCartao?nomeResponsavel=teste&numero=2&ba
 
 # Recupera Dados da Fila
 curl http://localhost:8080/cartao/receberDadosCartao
+
+# Docker
+docker build -t spring/spring-boot-rabbitmq .
+docker run -p 8080:8080 spring/spring-boot-rabbitmq
+
+# Docker RabbitMQ
+docker run -d — hostname my-rabbit — name rabbit13 -p 8080:15672 -p 5672:5672 -p 25676:25676 rabbitmq:3-management
+
+user:  guest
+senha: guest
